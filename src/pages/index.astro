@@ -5,12 +5,41 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+		<!-- cdn -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+		<!-- css -->
+		<link rel="stylesheet" href="/src/styles/style.css"/>
+
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>COFCOF</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header>
+			<nav>
+				<img src="" alt="" />
+				<div>
+					<span><a href="#">About Us</a></span>
+					<span><a href="#">Our Product</a></span>
+					<span><a href="#">Delivery</a></span>
+				</div>
+				<div>
+					<form action="">
+						<div>
+							<i class="fa fa-magnifying-glass"></i>
+							<input type="search" name="search" id="" placeholder="Search" />
+						</div>
+					</form>
+					<i class="fa-solid fa-basket-shopping"></i>
+				</div>
+			</nav>
+		</header>
 	</body>
 </html>
