@@ -9,13 +9,23 @@
 		<!-- cdn -->
 		<link
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		/>
 		<link
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		/>
 
 		<!-- css -->
-		<link rel="stylesheet" href="/src/styles/style.css"/>
+		<link rel="stylesheet" href="src/styles/style.css" />
+
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+			rel="stylesheet"
+		/>
 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
@@ -24,22 +34,30 @@
 	<body>
 		<header>
 			<nav>
-				<img src="" alt="" />
-				<div>
-					<span><a href="#">About Us</a></span>
-					<span><a href="#">Our Product</a></span>
-					<span><a href="#">Delivery</a></span>
+				<img class="logo-cof" src="public/img/cofcof-logo.png" alt="" />
+				<div id="myNav" class="nav-links">
+					<span><a class="nav-links-btn active" href="#">About Us</a></span>
+					<span><a class="nav-links-btn" href="#">Our Product</a></span>
+					<span><a class="nav-links-btn" href="#">Delivery</a></span>
 				</div>
-				<div>
+				<div class="nav-right">
 					<form action="">
 						<div>
-							<i class="fa fa-magnifying-glass"></i>
-							<input type="search" name="search" id="" placeholder="Search" />
+							<i class="fa fa-magnifying-glass icon-search"></i>
+							<input
+								class="search-box"
+								type="search"
+								name="search"
+								id=""
+								placeholder="Search"
+							/>
 						</div>
 					</form>
-					<i class="fa-solid fa-basket-shopping"></i>
+					<i class="fa-solid fa-basket-shopping icon-basket"></i>
 				</div>
 			</nav>
 		</header>
+
+		<script src="../scripts/Script.js"></script>
 	</body>
 </html>

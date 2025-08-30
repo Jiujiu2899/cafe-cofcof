@@ -1,3 +1,67 @@
 body {
-   background-color: #f7d390;
+   background-color: #fff0cf;
+   padding:30px 50px;
+   font-family: Rubik, sans-serif;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* border: 1px solid red; */
+   width: 100%;
+
+   .nav-links,
+   span,
+   a {
+      font-size: large;
+      margin: 0 7px;
+      color: black;
+      text-decoration: none;
+   }
+
+   .active,
+   .nav-links-btn:hover{
+      color: orange;
+   }
+}
+
+.logo-cof {
+   width: 10%;
+   height: 10%;
+   border-radius: 30px;
+}
+
+.nav-right {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   font-size: 20px;
+   font-weight: 600;
+
+   .search-box {
+      border: none;
+      padding: 10px;
+      width: 350px;
+      border-radius: 30px;
+      outline: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+   }
+
+   .search-box::placeholder {
+      font-weight: 350;
+      padding-left: 45px;
+   }
+
+   .icon-search {
+      position: relative;
+      left: 40px;
+      top: 2px;
+   }
+
+   .icon-basket {
+      margin-left: 10px;
+      font-size: 30px;
+   }
 }
