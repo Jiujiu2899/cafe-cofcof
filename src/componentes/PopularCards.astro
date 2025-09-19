@@ -1,0 +1,30 @@
+---
+const { stars, img, name, buys } = Astro.props;
+import "../styles/PopularCards.css";
+---
+
+<div class="mian-card">
+  <div class="str">
+    <p>{stars}</p>
+    <i class="fa-solid fa-star"></i>
+  </div>
+  <div class="img-cof">
+    <img src={img} alt="coffee" />
+  </div>
+
+  <div class="name-buy">
+    <div class="name-cof">
+      <p>{name}</p>
+    </div>
+    <div class="buy-cof">
+      <p>{buys}</p>
+    </div>
+  </div>
+  <div class="button-cof">
+    <div class="btn-c">
+      <button>Hot</button>
+      <button>Cold</button>
+    </div>
+    <i class="fa-solid fa-cart-shopping"></i>
+  </div>
+</div>

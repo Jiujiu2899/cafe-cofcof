@@ -1,5 +1,7 @@
 ---
-
+import PopularCards from "../componentes/PopularCards.astro";
+import Delivery from "../componentes/Delivery.astro";
+import "../styles/style.css";
 ---
 
 <html lang="en">
@@ -59,8 +61,13 @@
 			<div class="banner-container">
 				<div class="banner">
 					<div class="banner-text">
-						<h1>Enjoy your <span>coffee</span> with here <span>COFCOF!</span></h1>
-						<h4>Boort your producttivity and build your mood with a cup of coffee in the Cofcof Cafe</h4>
+						<h1>
+							Enjoy your <span>coffee</span> with here <span>COFCOF!</span>
+						</h1>
+						<h4>
+							Boot your producttivity and build your mood with a cup of coffee
+							in the Cofcof Cafe
+						</h4>
 						<div class="banner-btn">
 							<button class="bn-btn1">
 								Order Now <i class="fa-solid fa-arrow-right-long"></i>
@@ -74,15 +81,51 @@
 						</div>
 					</div>
 				</div>
-		</header>
-
-		<main class="wihte-bg">
-			<div class="popular">
-				<p>Popular <ina>Now</ina></p>
 			</div>
-			
-		</main>
 
-		<script src="../scripts/Script.js"></script>
+			<main class="wihte-bg">
+				<div class="ppl-b">
+					<div class="popular">
+						<p>Popular <span>Now</span></p>
+					</div>
+					<div class="popular-card">
+						<PopularCards
+							stars="4.9"
+							img="public/img/vanilla-latte.jpg"
+							name="Vanilla Latte"
+							buys="1.7 K"
+						/>
+						<PopularCards
+							stars="3.9"
+							img="public/img/espresso.jpg"
+							name="Espresso"
+							buys="2.3 K"
+						/>
+						<PopularCards
+							stars="4.3"
+							img="public/img/hazelunt-latte.jpg"
+							name="Hozzelnut Latte"
+							buys="12 K"
+						/>
+					</div>
+				</div>
+
+				<script src="../scripts/Script.js"></script>
+			</main>
+		</header>
+		<section>
+			<main class="delivery">
+				<div class="del-text">
+					<p>How to use delivery <span>service</span></p>
+				</div>
+				<div class="del-b">
+					<Delivery 
+						icon = public/img/cof1.png
+						titel = "Choose your coffee"
+						paragraph = "there are 20+ coffee for you"
+					/>
+				</div>
+			</main>
+		</section>
 	</body>
 </html>

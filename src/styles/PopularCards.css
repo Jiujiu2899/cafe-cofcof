@@ -1,0 +1,128 @@
+.mian-card {
+  width: 270px;
+  /* border: 1px solid red; */
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 3px 7px 14px 0px rgba(0, 0, 0, 0.5);
+
+  .str {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 80px;
+    background-color: white;
+    width: 60px;
+    height: 25px;
+    margin: 15px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    i {
+      color: #ffb400;
+      font-size: 17px;
+    }
+
+  }
+
+  .img-cof {
+    width: 270px;
+    height: 270px;
+    margin: auto;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .img-cof::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  }
+
+
+  .name-buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid rgb(255, 115, 0); */
+
+    .name-cof {
+
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        color: #000000;
+      }
+    }
+
+    .buy-cof {
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        color: #000000;
+      }
+    }
+  }
+
+  .button-cof {
+    /* border: 1px solid orange; */
+    display: flex;
+    align-items: center;
+
+    .btn-c {
+      button {
+        width: 60px;
+        padding: 5px;
+        border-radius: 10px;
+        border: 2px solid orange;
+        background-color: transparent;
+        color: orange;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-right: 10px;
+
+        &:hover {
+          border: 2px solid rgb(255, 115, 0);
+          color: rgb(255, 115, 0);
+        }
+      }
+    }
+
+    i {
+      margin-left: auto;
+      font-size: 25px;
+      color: rgb(255, 255, 255);
+      background-color: orange;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: rgb(255, 115, 0);
+      }
+    }
+  }
+}
