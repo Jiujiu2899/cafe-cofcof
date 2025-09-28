@@ -1,0 +1,29 @@
+---
+const { title, buy, description, str, imgMenu } = Astro.props;
+import "../styles/SpecialMenu.css";
+---
+
+<div class="card-menu">
+  <div class="str-level">
+    <p>{str}</p>
+    <i class="fa-solid fa-star str-i"></i>
+  </div>
+  <div class="img-menu">
+    <img src={imgMenu} alt="coffee" />
+  </div>
+
+  <div class="name-card">
+    <div class="name-menu">
+      <p>{title}</p>
+    </div>
+    <div class="buy-menu">
+      <p>{buy}</p>
+    </div>
+  </div>
+  <div class="para-menu">
+    <div class="p-menu">
+      <p class="pp">{description}</p>
+    </div>
+    <i class="fa-solid fa-cart-shopping cart-i"></i>
+  </div>
+</div>

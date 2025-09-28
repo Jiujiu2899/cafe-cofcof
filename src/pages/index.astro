@@ -1,6 +1,7 @@
 ---
 import PopularCards from "../componentes/PopularCards.astro";
 import Delivery from "../componentes/Delivery.astro";
+import SpecialMenu from "../componentes/SpecialMenu.astro";
 import "../styles/style.css";
 ---
 
@@ -119,13 +120,88 @@ import "../styles/style.css";
 					<p>How to use delivery <span>service</span></p>
 				</div>
 				<div class="del-b">
-					<Delivery 
-						icon = public/img/cof1.png
-						titel = "Choose your coffee"
-						paragraph = "there are 20+ coffee for you"
+					<Delivery
+						icon="public/img/cof1.png"
+						titel="Choose your coffee"
+						paragraph="there are 20+ coffee for you"
+					/>
+					<Delivery
+						icon="public/img/cof3.png"
+						titel="We delivery it to your"
+						paragraph="Chhoose your delivery service"
+					/>
+					<Delivery
+						icon="public/img/cof2.png"
+						titel="Enjoy your coffee"
+						paragraph="Have a nice day with your coffee"
 					/>
 				</div>
 			</main>
+
+			<div class="about-us">
+				<img src="public/img/coffee-1.jpg" alt="coffee-about-us" />
+				<div class="about-us-title">
+					<h3>About <span>us</span></h3>
+					<h4>We provide quality coffee, and ready to deliver.</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+						voluptas, quod, quia, voluptatibus quibusdam quos quidem voluptatem
+						quasi voluptate quibusdam quos quidem voluptatem quasi voluptate.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+						voluptas, quod, quia, voluptatibus quibusdam quos quidem voluptatem
+						quasi voluptate quibusdam quos quidem voluptatem quasi voluptate.
+					</p>
+						<button>Get your coffee</button>
+				</div>
+			</div>
+			<main class="special-menu">
+				<div class="special-text">
+					<p>Special <span>Menu</span></p>
+				</div>
+				<div class="special-b">
+					<SpecialMenu
+						title="Sandwich"
+						buy="$4.99"
+						description="Grilled sandwich with cheese, lettuce, and tomato."
+						str="4.3"
+						imgMenu="public/img/sandwich-2.jpg"
+					/>
+					<SpecialMenu
+						title="Hot Milk"
+						buy="$5.99"
+						description="Steamed milk with a touch of vanilla syrup."
+						str="4.9"
+						imgMenu="public/img/hot-milk.jpg"
+					/>
+					<SpecialMenu
+						title="Coffee Ice Cream"
+						buy="$3.99"
+						description="Rich and creamy coffee-flavored ice cream."
+						str="3.9"
+						imgMenu="public/img/coffee-ice-cream.jpg"
+					/>
+					<SpecialMenu
+						title="Cappuccino"
+						buy="$4.49"
+						description="Espresso, hot milk, and steamed-milk foam."
+						str="4.5"
+						imgMenu="public/img/cappucino.jpg"
+					/>
+					<SpecialMenu
+						title="Moccacinno"
+						buy="$5.49"
+						description="Espresso with steamed milk and chocolate syrup."
+						str="4.7"
+						imgMenu="public/img/moccacinno-2.jpg"
+					/>
+					<SpecialMenu
+						title="Waffle Ice Cream"
+						buy="$4.29"
+						description="Crispy waffle topped with coffee ice cream."
+						str="4.2"
+						imgMenu="public/img/waffle-ice-cream.jpg"
+					/>
+				</div>
 		</section>
 	</body>
 </html>
