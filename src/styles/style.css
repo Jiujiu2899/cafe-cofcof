@@ -83,6 +83,7 @@ body {
          align-items: center;
          /* border: 1px solid orange; */
          margin-top: 50px;
+         margin-bottom: 100px;
 
 
 
@@ -91,12 +92,13 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 50px;
+            gap: 20px;
             padding: 20px;
 
             .banner-text {
-               width: 100%;
+               width: 120%;
                margin-top: -80px;
+               padding-right: 12em;
 
 
                h1 {
@@ -117,7 +119,7 @@ body {
             }
 
             .banner-img {
-               width: 100%;
+               width: 80%;
                height: auto;
                border-radius: 10000px;
                /* border: 1px solid orange; */
@@ -180,7 +182,7 @@ body {
             }
 
             .popular {
-               margin-bottom: 20px;
+               margin-bottom: 50px;
 
                p,
                span {
@@ -201,6 +203,8 @@ body {
    }
 
    section {
+      margin-top: 80px;
+      margin-bottom: 100px;
       padding: 30px 50px;
       width: 100%;
 
@@ -227,6 +231,7 @@ body {
 
          .del-b {
             display: grid;
+            margin-top: 4em;
             grid-template-columns: repeat(3, 1fr);
             place-items: center;
             justify-content: space-around;
@@ -247,7 +252,7 @@ body {
          justify-content: space-around;
          align-items: center;
          gap: 70px;
-         margin: 220px -50px 0 -50px;
+         margin: 300px -50px 0 -50px;
          position: relative;
          /* overflow: hidden; */
          padding: 0 70px;
@@ -290,6 +295,8 @@ body {
                font-size: 22px;
                font-weight: 500;
                color: rgb(0, 0, 0);
+               margin-top: 10px;
+               margin-bottom: 15px;
             }
 
             p {

@@ -1,5 +1,5 @@
 .mian-card {
-  width: 270px;
+  width: 320px;
   /* border: 1px solid red; */
   background-color: rgb(255, 255, 255);
   padding: 25px;
@@ -65,6 +65,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 15px 0 10px 0;
     /* border: 1px solid rgb(255, 115, 0); */
 
     .name-cof {

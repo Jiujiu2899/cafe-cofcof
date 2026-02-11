@@ -1,5 +1,5 @@
 .card-menu {
-  width: 300px;
+  width: 350px;
   /* border: 1px solid red; */
   background-color: rgb(255, 255, 255);
   padding: 25px;
@@ -62,6 +62,8 @@
 
 
   .name-card {
+    margin-top: 20px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +92,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
 
     .p-menu {
       .pp {
