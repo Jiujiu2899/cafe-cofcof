@@ -370,7 +370,7 @@ body {
 
 
       .footer-container {
-         background-image: url(url../../public/img/cup-on-table.jpg);
+         background-image: url(/cup-on-table.jpg);
          padding: 60px 80px;
          border-radius: 15px;
          display: flex;
